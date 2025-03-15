@@ -57,7 +57,8 @@ public class Main {
         double savingWithInterest = 0;
         double annualPercent = (double) 12 / 100;
         for (int month = 1; month <= 12; month++) {
-            savingWithInterest = savingWithInterest * (1 + annualPercent / 12) + monthSavings;
+            savingWithInterest+=monthSavings;
+            savingWithInterest = savingWithInterest * (1 + annualPercent / 12);
             System.out.println("Месяц " + month + ", Сумма накоплений с процентами равна "
                     + savingWithInterest + " рублей");
         }
